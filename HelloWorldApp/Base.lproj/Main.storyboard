@@ -23,17 +23,19 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" name="AccentColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Woa-et-guh">
-                                <rect key="frame" x="82" y="745" width="250" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oia-xS-odT">
+                                <rect key="frame" x="82" y="821" width="250" height="41"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="NOy-9F-IYw"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="kuQ-KK-paA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="Bc0-qo-4eT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Show text">
-                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Show Text">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
+                                <connections>
+                                    <action selector="showButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="qSe-hw-udG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -42,10 +44,14 @@
                             <constraint firstItem="nWG-j2-mer" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="96c-SV-3a4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nWG-j2-mer" secondAttribute="trailing" constant="122" id="HQj-S0-k1p"/>
                             <constraint firstItem="nWG-j2-mer" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="164" id="I0v-Hi-oc9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Woa-et-guh" secondAttribute="bottom" constant="57" id="cN1-2L-30F"/>
-                            <constraint firstItem="Woa-et-guh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vo9-bb-XZT"/>
+                            <constraint firstItem="oia-xS-odT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KUQ-d8-pSS"/>
+                            <constraint firstItem="oia-xS-odT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Xba-Jy-i5j"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="nWG-j2-mer" id="I23-yS-KxJ"/>
+                        <outlet property="showTextButton" destination="oia-xS-odT" id="l2C-Ll-TDG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
